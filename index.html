@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fun Learning Quiz</title>
+</head>
+<body style="font-family: Arial; text-align:center; padding:40px;">
+
+<h1>Welcome to My Quiz</h1>
+
+<p>What is 5 + 3?</p>
+
+<button onclick="checkAnswer(8)">8</button>
+<button onclick="checkAnswer(10)">10</button>
+<button onclick="checkAnswer(6)">6</button>
+
+<p id="result"></p>
+
+<script>
+function checkAnswer(answer) {
+    if(answer === 8) {
+        document.getElementById("result").innerHTML = "Correct! 🎉";
+    } else {
+        document.getElementById("result").innerHTML = "Try Again!";
+    }
+}
+</script>
+
+</body>
+</html>
